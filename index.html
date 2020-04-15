@@ -8,7 +8,7 @@
         background-color: white;
     }
     #Google-Logo {
-        margin: 200px 0px 30px;
+        margin: 150px 0px 30px;
     }
     .adjusted-text-box {
         height: 40px;
@@ -17,60 +17,38 @@
         border-width: 1px;
         border-color: hsla(0, 0%, 74%, 0.568);
         border-style: solid;
-    }
-    .magnifying-glass{
-        position: absolute;
-        margin: auto;
-        top: 0;
-        right: 500px;
-        bottom: 53px;
-        left: 0;
-        width: 48px;
-        height: 48px;
-        background-color: transparent;
-        border-radius: 50%;
-        box-shadow: 0px 0px 0px 10px hsl(0, 0%, 63%);
-        transform: scale(0.16);
-    }
-    .magnifying-glass-handle {
-        position: absolute;
-        margin: auto;
-        top: 0;
-        right: 490px;
-        bottom: 42px;
-        left: 0;
-        width: 1.9px;
-        height: 7.75px;
-        background-color: hsl(0, 0%, 63%);
-        transform: rotate(-45deg);
+        background-color: white;
+        background-image: url(https://pbs.twimg.com/media/EVrXTh3WsAIJSi3?format=png&name=240x240);
+        background-position: 10px 10px;
+        background-repeat: no-repeat;
+        padding-left: 40px;
+        background-size: 25px;
     }
     #im-feeling-lucky {
         position: absolute;
+        margin-left: 78px;
+        margin-top: 70px;
         border-radius: 4px;
         border-style: solid;
         border-color:hsla(0, 0%, 63%, 0);
         height: 34px;
         color: hsl(0, 0%, 29%);
         background-color: hsla(0, 0%, 79%, 0.253);
-        margin: 10px, 40px;
         font-size: 14px;
         padding: 0 20px;
-        margin: 25px;
-        left: 597px;
     }
     #google-search {
         position: absolute;
+        margin-left: -78px;
+        margin-top: 70px;
         border-radius: 4px;
         border-style: solid;
         border-color:hsla(0, 0%, 63%, 0);
         height: 34px;
         color: hsl(0, 0%, 29%);
         background-color: hsla(0, 0%, 79%, 0.253);
-        margin: 10px, 40px;
         font-size: 14px;
         padding: 0 20px;
-        margin: 25px;
-        right: 597px;
     }
     ul {
         list-style-type: none;
@@ -99,8 +77,6 @@
             <input id="search-bar" type="text" class="adjusted-text-box">
             <div class="magnifying-glass"></div>
             <div class="magnifying-glass-handle"></div>
-        </div>
-        <div id="buttons" class="main-elements">
             <button id="im-feeling-lucky" type="lucky">I'm Feeling Lucky</button>
             <button id="google-search" type="search">Google Search</button>
         </div>
