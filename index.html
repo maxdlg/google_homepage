@@ -8,11 +8,11 @@
         background-color: white;
     }
     #Google-Logo {
-        margin: 150px 0px 30px;
+        margin: 150px -80px 30px 0;
     }
     .adjusted-text-box {
-        height: 40px;
-        width: 550px;
+        height: 42px;
+        width: 400px;
         border-radius: 25px;
         border-width: 1px;
         border-color: hsla(0, 0%, 74%, 0.568);
@@ -61,27 +61,85 @@
         height: 40px;
         width: 40px;
         border-color: transparent;
-        transform: translate(290px, -1px);
+        transform: translate(215px, -1px);
     }
     ul {
         list-style-type: none;
         margin: 0;
         padding: 0;
+        overflow: hidden;
     }
     li {
-        display: inline;
-    }   
-
+        float: left;
+    }
+    li a{
+        padding: 5px 20px 0 0;
+    }
+    a {
+        color: hsl(0, 0%, 29%);
+        text-decoration: none;
+        font-size: 14px;
+    }
+    a:hover {
+        color: hsl(0, 0%, 29%);
+        text-decoration: underline;
+        font-size: 14px;
+    }
+    #header-links {
+        position: static;
+        width: 90%;
+        padding-top: 20px;
+        top: 0;
+        left: 0;
+    }
+    #footer-links {
+        position: fixed;
+        background-color: #f2f2f2;
+        width: 98%;
+        padding: 10px 20px;
+        bottom: 0;
+        left: 0;
+        border-style: solid;
+        border-top-color: hsla(0, 0%, 64%, 0.342);
+        border-width: 1px 0 0 0;
+    }
+    .buttons {
+        float: right
+    }
+    #sign-in {
+        background-color: #4386fa;
+        color: white;
+        border-style: solid;
+        border-color: #4386fa;
+        border-radius: 2px;
+        height: 30px;
+        width: 68px;
+        transform: translate(-10px, -23px);
+    }
+    #menu {
+        background-color: transparent;
+        background-image: url(https://image.flaticon.com/icons/png/512/95/95088.png);
+        border-style: solid;
+        border-color: white;
+        opacity: 0.65;
+        background-size: 20px;
+        height: 25px;
+        width: 25px;
+        margin-top: -20px;
+        transform: translate(-40px, 0) scale(0.85);
+    }
 </style>
 <html>
     <main>
         <header>
-            <ul>
-                <li id="about"><a href="#">About</a></li>
-                <li id="store"><a href="#">Store</a></li>
-                <li id="gmail"><a href="#">Gmail</a></li>
-                <li id="images"><a href="#">Images</a></li>
+            <ul id="header-links">
+                <li id="about"><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwikoLL62e3oAhUTrJ4KHch-D9wQkNQCCAM&url=https%3A%2F%2Fabout.google%2F%3Ffg%3D1%26utm_source%3Dgoogle-US%26utm_medium%3Dreferral%26utm_campaign%3Dhp-header&usg=AOvVaw13L0SpN0L7ycx9R0_i4R2S">About</a></li>
+                <li id="store"><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwikoLL62e3oAhUTrJ4KHch-D9wQpMwCCAQ&url=https%3A%2F%2Fstore.google.com%2FUS%3Futm_source%3Dhp_header%26utm_medium%3Dgoogle_ooo%26utm_campaign%3DGS100042%26hl%3Den-US&usg=AOvVaw0wvkRBURf91YdMQCXOelDf">Store</a></li>
+                <li id="images" style="float: right"><a href="https://www.google.com/imghp?hl=en&tab=wi&authuser=0&ogbl">Images</a></li>
+                <li id="gmail" style="float: right"><a href="https://mail.google.com/mail/?tab=wm&authuser=0&ogbl">Gmail</a></li>
             </ul>
+            <button id="sign-in" type="sign-in" class="buttons">Sign In</button>
+            <button id="menu" type="9-box" class="buttons"></button>     
         </header>
         <div id="logo" class="main-elements">
             <img id="Google-Logo" alt="Google-Logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
@@ -92,6 +150,16 @@
             <button id="im-feeling-lucky" type="lucky">I'm Feeling Lucky</button>
             <button id="google-search" type="search">Google Search</button>
         </div>
+        <footer>
+            <ul id="footer-links">
+                <li id="advertising"><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwikoLL62e3oAhUTrJ4KHch-D9wQkdQCCBg&url=https%3A%2F%2Fwww.google.com%2Fintl%2Fen_us%2Fads%2F%3Fsubid%3Dww-ww-et-g-awa-a-g_hpafoot1_1!o2%26utm_source%3Dgoogle.com%26utm_medium%3Dreferral%26utm_campaign%3Dgoogle_hpafooter%26fg%3D1&usg=AOvVaw3XLzhicA5ZZW0afDbW0l2T">Advertising</a></li>
+                <li id="business"><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwikoLL62e3oAhUTrJ4KHch-D9wQktQCCBk&url=https%3A%2F%2Fwww.google.com%2Fservices%2F%3Fsubid%3Dww-ww-et-g-awa-a-g_hpbfoot1_1!o2%26utm_source%3Dgoogle.com%26utm_medium%3Dreferral%26utm_campaign%3Dgoogle_hpbfooter%26fg%3D1&usg=AOvVaw2SJ4zwRVXKyZr53qG9dm4K">Business</a></li>
+                <li id="how-search-works"><a href="https://google.com/search/howsearchworks/?fg=1">How Search Works</a></li>
+                <li id="setings" class="right-footer" style="float: right"><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwikoLL62e3oAhUTrJ4KHch-D9wQzq0CCBY&url=https%3A%2F%2Fwww.google.com%2Fpreferences%3Fhl%3Den&usg=AOvVaw0XvhSqpc_GFt9aG_mRLp1F">Settings</a></li>
+                <li id="terms" class="right-footer" style="float: right"><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwikoLL62e3oAhUTrJ4KHch-D9wQ8qwCCBU&url=https%3A%2F%2Fpolicies.google.com%2Fterms%3Ffg%3D1&usg=AOvVaw3sEM_N0elgYQx8WbCXpj3n">Terms</a></li>
+                <li id="privacy" class="right-footer" style="float: right"><a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=webhp&cd=&cad=rja&uact=8&ved=0ahUKEwikoLL62e3oAhUTrJ4KHch-D9wQ8awCCBQ&url=https%3A%2F%2Fpolicies.google.com%2Fprivacy%3Ffg%3D1&usg=AOvVaw12z8DS9cd-g0Aokit_wxri">Privacy</a></li>
+            </ul>
+        </footer>
     </main>
 </html>
 
