@@ -21,7 +21,7 @@
         background-image: url(https://pbs.twimg.com/media/EVrXTh3WsAIJSi3?format=png&name=240x240);
         background-position: 10px 10px;
         background-repeat: no-repeat;
-        padding-left: 40px;
+        padding: 0 40px;
         background-size: 25px;
     }
     #im-feeling-lucky {
@@ -50,6 +50,19 @@
         font-size: 14px;
         padding: 0 20px;
     }
+    #microphone {
+        position: absolute;
+        background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2Fe%2Fe8%2FGoogle_mic.svg%2F537px-Google_mic.svg.png&f=1&nofb=1);
+        background-size: 14px;
+        background-position: 10px 10px;
+        background-color: transparent;
+        background-repeat: no-repeat;
+        border-radius: 50%;
+        height: 40px;
+        width: 40px;
+        border-color: transparent;
+        transform: translate(290px, -1px);
+    }
     ul {
         list-style-type: none;
         margin: 0;
@@ -64,10 +77,10 @@
     <main>
         <header>
             <ul>
-                <li>About</li>
-                <li>Store</li>
-                <li>Gmail</li>
-                <li>Images</li>
+                <li id="about"><a href="#">About</a></li>
+                <li id="store"><a href="#">Store</a></li>
+                <li id="gmail"><a href="#">Gmail</a></li>
+                <li id="images"><a href="#">Images</a></li>
             </ul>
         </header>
         <div id="logo" class="main-elements">
@@ -75,8 +88,7 @@
         </div>
         <div id="search-bar-elements" class="main-elements">
             <input id="search-bar" type="text" class="adjusted-text-box">
-            <div class="magnifying-glass"></div>
-            <div class="magnifying-glass-handle"></div>
+            <button id="microphone" type="mic"></button>
             <button id="im-feeling-lucky" type="lucky">I'm Feeling Lucky</button>
             <button id="google-search" type="search">Google Search</button>
         </div>
