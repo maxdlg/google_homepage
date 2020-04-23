@@ -1,0 +1,133 @@
+.main-elements {
+	display: flex;
+	justify-content: center;
+}
+body {
+	background-color: white;
+}
+#Google-Logo {
+	margin: 100px -80px 30px 0;
+}
+.adjusted-text-box {
+	height: 44px;
+	width: 500px;
+	border-radius: 25px;
+	border-width: 1px;
+	border-color: hsla(0, 0%, 74%, 0.568);
+	border-style: solid;
+	background-color: white;
+	background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.pixabay.com%2Fphoto%2F2017%2F01%2F13%2F01%2F22%2Fmagnifying-glass-1976105_960_720.png&f=1&nofb=1);
+	background-position: 14px 14px;
+	background-repeat: no-repeat;
+	background-size: 18px;
+	padding: 0 40px;
+	z-index: 5;
+}
+
+#im-feeling-lucky {
+	margin-right: 3px;
+	margin-top: 40px;
+	border-radius: 4px;
+	border-style: solid;
+	border-color: hsla(0, 0%, 63%, 0);
+	height: 34px;
+	color: hsl(0, 0%, 29%);
+	background-color: hsla(0, 0%, 79%, 0.253);
+	font-size: 14px;
+	padding: 0 20px;
+	font-family: sans-serif;
+}
+#google-search {
+	margin-left: 3px;
+	margin-top: 40px;
+	border-radius: 4px;
+	border-style: solid;
+	border-color: hsla(0, 0%, 63%, 0);
+	height: 34px;
+	color: hsl(0, 0%, 29%);
+	background-color: hsla(0, 0%, 79%, 0.253);
+	font-size: 14px;
+	padding: 0 20px;
+	font-family: sans-serif;
+}
+#microphone {
+	position: absolute;
+	background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2Fe%2Fe8%2FGoogle_mic.svg%2F537px-Google_mic.svg.png&f=1&nofb=1);
+	background-size: 14px;
+	background-position: 10px 10px;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	border-radius: 50%;
+	height: 40px;
+	width: 40px;
+	border-color: transparent;
+	transform: translate(265px, 3px);
+}
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	font-family: sans-serif;
+}
+li {
+	float: left;
+}
+li a {
+	padding: 5px 20px 0 0;
+}
+a {
+	color: hsl(0, 0%, 29%);
+	text-decoration: none;
+	font-size: 14px;
+}
+a:hover {
+	color: hsl(0, 0%, 29%);
+	text-decoration: underline;
+	font-size: 14px;
+}
+#header-links {
+	position: static;
+	width: 90%;
+	padding: 20px 20px;
+	top: 0;
+	left: 0;
+}
+#footer-links {
+	position: fixed;
+	background-color: #f2f2f2;
+	width: 98%;
+	padding: 10px 20px;
+	bottom: 0;
+	left: 0;
+	border-style: solid;
+	border-top-color: hsla(0, 0%, 64%, 0.342);
+	border-width: 1px 0 0 0;
+}
+.buttons {
+	float: right;
+}
+#sign-in {
+	background-color: #4386fa;
+	color: white;
+	border-style: solid;
+	border-color: #4386fa;
+	border-radius: 2px;
+	height: 30px;
+	width: 68px;
+	transform: translate(-10px, -43px);
+	font-family: sans-serif;
+}
+#menu {
+	background-color: transparent;
+	background-image: url(https://image.flaticon.com/icons/png/512/95/95088.png);
+	border-style: solid;
+	border-color: white;
+	opacity: 0.65;
+	background-size: 20px;
+	background-repeat: no-repeat;
+	height: 25px;
+	width: 25px;
+	margin-top: -20px;
+	transform: translate(-40px, -20px) scale(0.85);
+}
